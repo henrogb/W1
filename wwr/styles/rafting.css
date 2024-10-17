@@ -5,6 +5,35 @@
     --accent2-color: #BBE0D9;
 }
 
+header{
+    background-color: rgba(0, 197, 255, 0.17);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 90px;  
+}
+
+
+.navbar a{
+    background-color: #5B3D1E;
+    padding: 10px 50px;
+    border: 2px solid black;
+    flex: 1;
+    text-align: center;
+    min-width: 100px;
+}
+
+.logo {
+    display: block;
+    border-radius: 15px;
+    padding: 10px 200px;   
+}
+
 h1, h2, h3 {
     color: var(--primary-color);
     font-family: "Indie Flower", cursive ;
@@ -56,7 +85,7 @@ article {
     top: 35%;
     position: absolute;
     z-index: 1;
-    background-color: rgba(0, 280, 200, 0.6);
+    background-color: rgba(0, 197, 255, 0.4);
     display: flex;
     align-items: center;
     padding: 20px;
@@ -65,13 +94,99 @@ article {
 
 article img{
     margin: 10px;
-    width: 200px !important;
+    width: 300px !important;
 }
 
 article p {
+    margin: 20px;
     text-align: justify;
     color: white;
     flex: 1;
+}
+
+.history{
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.history h2{
+    font-size: 62px;
+    grid-column: span 3;
+    justify-self: center;
+}
+
+.historyimage{
+    margin: 0;
+    justify-self: center;
+    margin-top: 20px;
+    position: relative;
+    min-width: 61%;
+    height: auto;
+    width: 61%;
+    
+}
+
+.history p{
+    display: flex;
+    justify-items: stretch;
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+
+.adventure {
+    text-align: center; /* Centraliza o texto da seção */
+}
+
+.adventure h2 {
+    font-size: 62px; /* Tamanho do título */
+}
+
+.images {
+    display: flex; /* Usamos flexbox para alinhar os itens em linha */
+    justify-content: space-around; /* Espaça os itens uniformemente */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+figure {
+    margin: 10px; /* Espaçamento entre as figuras */
+    flex: 1 1 200px; /* Permite que cada figura tenha uma base mínima de 200px */
+    max-width: 250px; /* Define uma largura máxima para cada figura */
+}
+
+.images img {
+        width: 250px; /* Largura fixa */
+        height: 150px; /* Altura fixa para uniformidade */
+        object-fit: cover; /* Corta a imagem para preencher o espaço */
+}
+
+
+figcaption {
+    margin-top: 5px; /* Espaçamento entre a imagem e a legenda */
+    font-size: 16px; /* Tamanho da fonte da legenda */
+    color: #333; /* Cor do texto da legenda */
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+footer p {
+    margin: 0; /* Remove a margem do parágrafo */
+    grid-column: 2;
+    justify-self: center;
+}
+
+footer nav {
+    margin-left: 20px; /* Espaço entre os links */
+    justify-self: end;
+    grid-column: 3;
 }
 
 
