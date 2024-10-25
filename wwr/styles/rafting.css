@@ -175,24 +175,33 @@ figcaption {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    background-color: gray;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Mantém os itens nas extremidades */
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.37);
+    max-width: 1920px;
+    margin: 0 auto;
+    text-align: center; /* Centraliza o texto */
 }
 
-footer p {
-    margin: 0; /* Remove a margem do parágrafo */
-    grid-column: 2;
-    justify-self: center;
+.footer-content p {
+    flex: 1; /* Faz o parágrafo ocupar o espaço restante */
+    margin: 0; /* Remove margem padrão */
+    justify-content: center;
 }
 
-footer nav {
-    margin-left: 20px; /* Espaço entre os links */
-    justify-self: end;
-    grid-column: 3;
+.sociallinks {
+    display: flex;
+    justify-content: flex-end; /* Alinha os links à direita */
 }
 
+.sociallinks a {
+    margin-left: 15px; /* Espaçamento entre os links */
+}
 
 
 
