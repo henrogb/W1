@@ -226,6 +226,7 @@ footer nav {
     height: 841px; */
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .first {
