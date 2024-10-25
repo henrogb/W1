@@ -96,7 +96,7 @@ article {
 
 }
 
-article img{
+article img {
     margin: 10px;
     width: 300px !important;
 }
@@ -108,19 +108,19 @@ article p {
     flex: 1;
 }
 
-.history{
+.history {
     gap: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.history h2{
+.history h2 {
     font-size: 62px;
     grid-column: span 3;
     justify-self: center;
 }
 
-.historyimage{
+.historyimage {
     margin: 0;
     justify-self: center;
     margin-top: 20px;
