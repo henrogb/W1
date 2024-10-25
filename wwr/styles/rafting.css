@@ -5,10 +5,11 @@
     --accent2-color: #BBE0D9;
 }
 
+
 header{
     background-color: rgba(0, 197, 255, 0.17);
     display: grid;
-    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .navbar {
@@ -51,6 +52,9 @@ a {
 }
 
 body {
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     padding: 10px;
 }
@@ -158,9 +162,9 @@ figure {
 }
 
 .images img {
-        width: 250px; /* Largura fixa */
-        height: 150px; /* Altura fixa para uniformidade */
-        object-fit: cover; /* Corta a imagem para preencher o espaço */
+    width: 250px; /* Largura fixa */
+    height: 150px; /* Altura fixa para uniformidade */
+    object-fit: cover; /* Corta a imagem para preencher o espaço */
 }
 
 
@@ -188,6 +192,187 @@ footer nav {
     justify-self: end;
     grid-column: 3;
 }
+
+
+
+
+/* -------------------------------------- contact us page preset styles page -------------------------------------------------------------------------*/
+
+.contactuspage {
+    display: flex;
+    justify-content: space-between;
+    border: 8px solid black;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex: 1;
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
+.first, .second, .third {
+    flex-shrink: 1;
+    /* width: 839px; */
+    flex: 1; /* Cada div ocupará a mesma largura */
+    margin: 10px; /* Espaçamento entre as divs */
+    /* Adicione qualquer estilo específico que você tenha para cada uma */
+    max-width: 663px;
+    max-height: 1080px;
+}
+
+.second {
+    justify-content: center;
+    flex: 1;
+    /* width: 678px;
+    height: 841px; */
+    display: flex;
+    align-items: center;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.first h1 {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+/*---------------------------------------- general styles ------------------------------------------------*/
+.employers h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.employee {
+    flex-shrink: 1;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 600px;
+}
+
+.employee img {
+    width: 150px;
+    height: 150px;
+}
+
+.text {
+    width: 651px;
+    
+}
+/*-------------------------------------- form contac us page ------------------------------------------------------*/
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--primary-color); /* Fundo claro para o formulário */
+    border-radius: 10px; /* Bordas arredondadas */
+    /* padding: 20px; Espaçamento interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    color: var(--secondary-color);
+    font-family: "Indie Flower", cursive ;
+    font-weight: bold;
+    width: 670px;
+    height: 655px;
+    flex-shrink: 1;
+}   
+ 
+.contact{
+    grid-column: 2;
+    width: 295px;
+    height: 464px;
+    justify-self: center;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.form h1{
+   color: #231303;
+   grid-column: span 2;
+   justify-self: center;
+   margin-bottom: 30px;
+}
+
+
+.content{
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    display: flex;
+    flex-direction: column; /* Mantém os itens em coluna */
+    padding: 10px;
+}
+
+.name label {
+    margin-bottom: 10px; /* Espaçamento abaixo de cada label */
+}
+
+.name input {
+    width: 300px;
+    margin-bottom: 20px; /* Espaçamento abaixo de cada input */
+    background-color: var(--accent2-color);
+}
+
+.radio {
+    display: flex;
+    flex-direction: column; /* Mantém os itens em coluna */
+    margin: 5px;
+}
+
+.radio label {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.option {
+    margin-bottom: 10px; /* Espaçamento entre as opções */
+}
+
+
+.option input {
+    margin-right: 10px; /* Espaçamento à direita do input */
+    background-color: var(--accent2-color);
+}
+
+.boxmessage{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+textarea {
+    background-color: var(--accent2-color);;
+    width: 300px;
+}
+
+.message{
+    margin: 10px;
+    /* width: 400px; */
+}
+
+.checkbox{
+    margin: 20px;
+}
+
+.botao {
+    margin-top: 25px;
+    background-color: var(--accent2-color);
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
 
 
 
