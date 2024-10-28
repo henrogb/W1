@@ -210,7 +210,7 @@ footer {
 .contactuspage {
     display: flex;
     justify-content: space-between;
-    border: 8px solid black;
+/*     border: 8px solid black; */
     align-items: center;
     flex-wrap: nowrap;
     flex: 1;
