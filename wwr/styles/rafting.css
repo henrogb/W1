@@ -214,8 +214,8 @@ footer {
     align-items: center;
     flex-wrap: nowrap;
     flex: 1;
-    max-width: 1920px;
-    max-height: 1080px;
+/*     max-width: 1920px;
+    max-height: 1080px; */
 }
 
 .first, .second, .third {
@@ -258,12 +258,13 @@ footer {
 
 .employee {
     flex-shrink: 1;
-    border: 5px solid black;
+/*     border: 5px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
     width: 600px;
+    margin: 5px
 }
 
 .employee img {
