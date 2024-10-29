@@ -5,6 +5,9 @@
     --accent2-color: #BBE0D9;
 }
 
+html {
+    margin: 0;
+}
 
 header {
     background-color: rgba(0, 197, 255, 0.17);
@@ -84,7 +87,7 @@ body {
     width: 100%;
 }
 
-article {
+.article-about {
     justify-content: center;
     margin: 50px;
     top: 35%;
@@ -97,12 +100,12 @@ article {
 
 }
 
-article img {
+.article-about img {
     margin: 10px;
     width: 300px !important;
 }
 
-article p {
+.article-about p {
     margin: 20px;
     text-align: justify;
     color: white;
@@ -404,6 +407,91 @@ textarea {
     border: 0;
     width: 100%;
     height: 450px; /* Ajuste conforme necessário */
+}
+
+/*---------------------------------------------------- Trips page ---------------------------------------------------------------------------*/
+
+
+.main-content-trips {
+    background-image: url("../images/hero_trips.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titles-first-trips {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titles-first-trips h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.titles-first-trips h5 {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.titles-first-trips h2 {
+    font-size: 65px;
+    margin-bottom: 15px;
+    margin-top: 200px;
+}
+
+.images-first-trips {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(53, 28, 4, 0.813);
+    /* padding: 20px; */
+}
+
+.content-image-text {
+    margin: 15px;
+}
+
+
+.content-image-text {
+    margin: 10px;
+}
+
+.images-first-trips img {
+    width: 600px; 
+    height: 400px;
+}
+
+.image-container {
+    display: flex;
+    position: relative;
+    overflow: hidden; 
+    width: 600px; 
+    height: 400px;
+}
+
+.overlay-image-first-trips {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Começa fora da tela, à direita */
+    width: 75%; /* Faz o overlay ocupar 75% da imagem */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10px + 0.8vw); /* Ajuste dinâmico para caber em resoluções variadas */
+    padding: 20px; 
+    text-align: center;
+    transition: left 0.3s ease; 
+}
+
+.image-container:hover .overlay-image-first-trips {
+    left: 20%; /* Move o overlay para a posição desejada ao passar o mouse */
 }
 
 
