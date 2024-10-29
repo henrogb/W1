@@ -6,23 +6,23 @@
 }
 
 
-header{
+header {
     background-color: rgba(0, 197, 255, 0.17);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    /* padding: 20px; Adiciona padding direto no cabeçalho para controle de altura */
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 90px;  
+    margin: 20px; /* Reduz o valor de margin para diminuir a altura */
 }
 
-
-.navbar a{
+.navbar a {
     background-color: #5B3D1E;
-    padding: 10px 50px;
+    padding: 10px 30px; /* Ajusta o padding para controlar o tamanho dos botões */
     border: 2px solid black;
     flex: 1;
     text-align: center;
@@ -32,7 +32,8 @@ header{
 .logo {
     display: block;
     border-radius: 15px;
-    padding: 10px 200px;   
+    padding: 10px 100px; /* Reduz o padding para diminuir a altura ocupada */
+    width: 150px;
 }
 
 h1, h2, h3 {
