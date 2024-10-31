@@ -180,8 +180,8 @@ figcaption {
 
 footer {
     background-color: gray;
-    padding: 20px 0;
-    margin-top: auto;
+    padding: 20px 15px;
+    width: 100%;
 }
 
 .footer-content {
@@ -412,7 +412,7 @@ textarea {
 /*---------------------------------------------------- Trips page ---------------------------------------------------------------------------*/
 
 
-.main-content-trips {
+.image-background {
     background-image: url("../images/hero_trips.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -746,5 +746,35 @@ textarea {
     color: white;
 }
 
+/*--------------------------------------------------- tabela --------------------------------------------*/
 
+.trips-table {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    max-width: 800px; /* Definindo uma largura máxima */
+    width: 100%; /* Faz a tabela ocupar todo o espaço do contêiner */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trips-table table {
+    width: 100%; /* Tabela ocupa 100% do contêiner */
+    border-collapse: collapse;
+}
+
+.trips-table th, .trips-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.trips-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.trips-table tr:hover {
+    background-color: rgba(53, 28, 4, 0.1);
+}
 
