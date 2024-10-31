@@ -437,8 +437,13 @@ textarea {
 
 .titles-first-trips h2 {
     font-size: 65px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     margin-top: 200px;
+}
+
+.subtitle-trips {
+    margin-top: 5px;
+    font-size: 26px;
 }
 
 .images-first-trips {
@@ -474,6 +479,8 @@ textarea {
 
 .overlay-image-first-trips {
     display: flex;
+    flex-direction: column;
+    text-align: left;
     position: absolute;
     top: 0;
     left: 100%; /* Começa fora da tela, à direita */
@@ -482,11 +489,11 @@ textarea {
     background-color: rgba(0, 0, 0, 0.7); 
     color: white;
     z-index: 2;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     font-size: calc(10px + 0.8vw); /* Ajuste dinâmico para caber em resoluções variadas */
     padding: 20px; 
-    text-align: center;
+    /* text-align: center; */
     transition: left 0.3s ease; 
 }
 
@@ -495,10 +502,226 @@ textarea {
 }
 
 
+/*--------------------------------------------------------------- Home Page ------------------------------------------------------------------*/
+.home {
+    background-image: url("../images/hero.jpg" );
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title-home{
+    justify-self: center;
+}
+
+.first-section-home{
+    /* padding: 10px; */
+}
+
+.first-section-home h1{
+    display: flex;
+    justify-content: end;
+    font-size: 45px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
 
 
+.first-contents-home{
+    display: flex;
+    padding-top: 10px;
+}
+
+.first-home{
+    display: flex;
+    padding-left: 10px;
+}
+
+.first-home img {
+    width: 630px;
+    margin: 10px;
+}
+
+.form-home{
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-home{
+    background-color:  rgb(50, 38, 15);
+    width: 500px;
+    height: 540px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: var(--primary-color);
+    
+}
 
 
+.register-home h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    font-size: 50px;
+    
+}
+
+.content-form-home {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    align-items: center;
+}
+
+.name-form-home{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.name-form-home label{
+    margin: 5px;
+    font-size: 26px;
+}
+
+.name-form-home input{
+    margin: 5px;
+    width: 300px;
+    height: 20px;
+}
+
+.email-form-home{
+    display: flex;
+    flex-direction: column;
+}
+
+.email-form-home label{
+    margin: 5px;
+    font-size: 26px;
+}
+
+.email-form-home input{
+    margin: 5px;
+    width: 300px;
+    height: 20px;
+}
+
+.button-form-home{
+    transform: scale(1.4);
+    margin-top: 70px;
+}
+
+/*--------------------------------------------- Article ---------------------------------------*/
+
+
+.content-article-home{
+    display: flex;
+    padding: 15px;
+    margin: 15px;
+    flex-wrap: nowrap;
+}
+
+.article-home {
+   display: flex;
+   background-color: rgba(50, 38, 15, 0.7);
+
+}
+
+.article-home img {
+    width: 350px;
+    margin: 15px;
+}
+
+.container-text {
+    text-align: justify;
+    flex: 1;
+    margin: 25px;
+}
+
+.container-text p, a{
+    font-size: 20px;
+}
+
+
+.article-about {
+    justify-content: center;
+    margin: 50px;
+    top: 35%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 197, 255, 0.4);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.article-about img {
+    margin: 10px;
+    width: 300px !important;
+}
+
+.article-about p {
+    margin: 20px;
+    text-align: justify;
+    color: white;
+    flex: 1;
+}
+
+/*--------------------------------- grid -----------------------------------------------------------*/
+
+.rafting-info-section {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Ajuste o fundo conforme o tema do site */
+    color: white;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.05);
+}
+
+.grid-content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding-top: 10px;
+    transition: bottom 0.3s ease;
+}
+
+.grid-content h3 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+.grid-content p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: white;
+}
 
 
 
