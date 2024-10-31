@@ -426,19 +426,26 @@ textarea {
 }
 
 .titles-first-trips h1 {
+    color: black;
     font-size: 80px;
     margin-bottom: 10px;
 }
 
 .titles-first-trips h5 {
+    color: white;
     font-size: 30px;
     margin-top: 15px;
 }
 
 .titles-first-trips h2 {
+    color: black;
     font-size: 65px;
     margin-bottom: 5px;
     margin-top: 200px;
+}
+
+.titles-first-trips h4{
+    color: white;
 }
 
 .subtitle-trips {
@@ -497,6 +504,10 @@ textarea {
     transition: left 0.3s ease; 
 }
 
+.overlay-image-first-trips h2{
+    color: white;
+}
+
 .image-container:hover .overlay-image-first-trips {
     left: 20%; /* Move o overlay para a posição desejada ao passar o mouse */
 }
@@ -518,6 +529,7 @@ textarea {
 }
 
 .first-section-home h1{
+    color: white;
     display: flex;
     justify-content: end;
     font-size: 45px;
@@ -566,7 +578,7 @@ textarea {
     align-items: center;
     margin: 15px;
     font-size: 50px;
-    
+    color: white;
 }
 
 .content-form-home {
@@ -583,6 +595,7 @@ textarea {
 }
 
 .name-form-home label{
+    color: var(--secondary-color);
     margin: 5px;
     font-size: 26px;
 }
@@ -599,6 +612,7 @@ textarea {
 }
 
 .email-form-home label{
+    color: var(--secondary-color);
     margin: 5px;
     font-size: 26px;
 }
@@ -645,6 +659,15 @@ textarea {
     font-size: 20px;
 }
 
+.container-text p{
+   color: #96a900;
+}
+
+.container-text a{
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 
 .article-about {
     justify-content: center;
@@ -652,7 +675,7 @@ textarea {
     top: 35%;
     position: absolute;
     z-index: 1;
-    background-color: rgba(0, 197, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
     padding: 20px;
